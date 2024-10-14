@@ -31,10 +31,88 @@ O projeto é construído com Next.js e utiliza MUI para estilização e layout d
 - Cada funcionalidade terá sua própria branch de desenvolvimento.
 - Testar componentes em páginas dedicadas antes de integrá-los ao projeto.
 
+# Fase 2: Desenvolvimento do Back-end e Integração de Dados
+
+## Objetivos:
+
+- Desenvolver as APIs necessárias para o e-commerce.
+- Conectar a interface desenvolvida na Fase 1 com o back-end.
+- Criar e configurar a base de dados usando MongoDB Atlas para armazenar informações sobre produtos, usuários, pedidos e carrinho de compras.
+- Implementar autenticação e autorização de usuários usando NextAuth.js.
+- Garantir que a aplicação seja funcional e escalável.
+
 # Stack Tecnológico 
 
 - Next.js (Framework React)
 - MUI (Material-UI) (Biblioteca de componentes de interface)
+- Node.js com Express para o desenvolvimento do back-end.
+- MongoDB Atlas para armazenamento de dados.
+- NextAuth.js para autenticação e autorização.
+- Axios ou Fetch API para consumo das APIs no front-end.
+
+## Tarefas por Grupos:
+
+1. Yan & Vitor Hugo - Autenticação Básica com NextAuth.js
+- Descrição: Implementar a autenticação de usuários de forma simples com NextAuth.js.
+
+Tarefas:
+- Configurar NextAuth.js para login usando provedores como Google ou credenciais simples (nome e senha).
+- Criar uma página de login conectada ao NextAuth.js.
+- Testar a autenticação com MongoDB, armazenando apenas nome de usuário e senha (sem necessidade de dados complexos).
+
+2. Welker & Tais - API Simples de Produtos
+- Descrição: Criar uma API básica para manipular produtos.
+
+Tarefas:
+- Criar uma rota de GET para listar produtos e uma de POST para adicionar novos produtos.
+- Armazenar os produtos em MongoDB Atlas com informações básicas: nome, preço e imagem.
+- Testar a exibição dos produtos na interface utilizando a rota de GET para listar os itens.
+
+3. Vitor & Richard - Exibição e Filtros Simples de Produtos
+- Descrição: Implementar a exibição e filtros básicos para os produtos.
+
+Tarefas:
+- Consumir a rota de GET da API de produtos e listar os itens na interface.
+- Adicionar um filtro básico por categoria ou faixa de preço.
+- Utilizar componentes MUI para organizar a exibição dos produtos.
+
+4. Lorran & Davi Vale - Navegação Simples e Páginas Protegidas
+- Descrição: Implementar a navegação e proteger páginas com base na autenticação.
+
+Tarefas:
+- Usar NextAuth.js para proteger páginas, como o Carrinho e Checkout, permitindo apenas o acesso de usuários autenticados.
+- Testar a navegação entre a página de login e as áreas protegidas.
+
+5. Daniel & Erica - API Simples de Checkout e Pedidos
+- Descrição: Criar uma API básica para o processo de checkout e armazenamento de pedidos.
+
+Tarefas:
+- Criar uma rota POST para enviar o pedido (produtos, valor total).
+- Salvar os pedidos no MongoDB Atlas em uma coleção simples.
+- Testar o envio de pedidos a partir da página de Checkout.
+
+6. Raphael & Davi - Página de Detalhes do Produto e Avaliações Básicas
+- Descrição: Criar o footer do projeto
+
+Tarefas:
+Criar o componente footer para ser usado na página.
+
+7. Augusto, Arthur & Pedro - API Simples do Carrinho de Compras
+- Descrição: Desenvolver a API e funcionalidade simples do carrinho de compras.
+
+Tarefas:
+- Criar rotas POST e GET para adicionar e listar itens no carrinho.
+- Utilizar o MongoDB Atlas para armazenar os itens do carrinho por usuário.
+- Exibir os itens do carrinho na interface, consumindo a rota de GET.
+
+# Como utilizar MONGODB ATLAS
+- Instale mongodb no projeto
+```
+npm install mongodb
+```
+
+- URL do Banco de Dados: "mongodb+srv://vinicioscararine95:Navaronee897157@cluster0.3pfo9yd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 
 ## Branches e Pull Requests
 
