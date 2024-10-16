@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 
-const uri = "mongodb+srv://vinicioscararine95:Navaronee897157@cluster0.3pfo9yd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb://localhost:27017/ecommerce";
 const options = {};
 
 let client;
